@@ -1,16 +1,22 @@
 package com.example.loginapp.controller;
 
+import java.util.Optional;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
 import com.example.loginapp.dto.ApiResponse;
 import com.example.loginapp.dto.LoginRequest;
 import com.example.loginapp.entity.User;
 import com.example.loginapp.repository.UserRepository;
-import jakarta.validation.Valid;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.web.bind.annotation.*;
 
-import java.util.Optional;
+import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/api/auth")
