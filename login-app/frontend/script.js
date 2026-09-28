@@ -1,5 +1,5 @@
 // Change this to your deployed backend URL, e.g. https://your-backend.onrender.com
-const API_BASE_URL = "http://localhost:8080";
+const API_BASE_URL = "https://login-app-backend-nwzk.onrender.com";
 
 const form = document.getElementById("loginForm");
 const message = document.getElementById("message");
